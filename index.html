@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Sport</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/deporte.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ce42af73cc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header-principal">
+            <h1> Bienvenidos a todo aventura</h1>
+            <div class="banner-principal"><img src="./img/footer.jpg" width="100%" alt=""></div>
+        </header>
+        <div class="navegador">
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu"><img src="./img/ico/menu2.png" width="100%"></label>
+            <nav class="nave-principal">
+                <ul>
+                    <li><a href="#">Bienvenidos</a></li>
+                    <li><a href="#">Deportes aventura</a></li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Guías promocionales</a></li>
+                    <li><a href="#">Consultas</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main class="structure-flex">
+            <aside class="left-side">
+                <div class="hgroup-left-side">
+                <hgroup>
+                    <h1>Deportes de Aventura</h1>
+                    <h2>Escalada</h2>
+                    <h2>Parapente</h2>
+                    <h2>Ciclismo de montaña</h2>
+                    <h2>Andinismo</h2>
+                </hgroup>
+                </div>
+                <div class="form-container">
+                <form >
+                    <h1>Formulario de Inscripción</h1>
+                    <label for="nombres" class="dato">Nombres</label> 
+                    <input type="text" class="caja" id="nombres" name="nombres" placeholder="Ingrese nombre" required>
+                    <br>
+                    <label for="apellidos" class="dato">Apellidos</label>
+                    <input type="text" class="caja" id="apellidos" name="apellidos" placeholder="Ingrese apellido" required>
+                    <br>
+                    
+                    <div class="radio">
+                    <h2>Género:</h2>
+                    <input type="radio" name="sexo" id="hombre">
+                    <label for="hombre">Hombre</label>
+
+                    <input type="radio" name="sexo" id="mujer">
+                    <label for="mujer">Mujer</label>
+                    </div>
+                    
+                    <label for="distrito" class="dato1">Distrito</label>
+                    <select name="Distrito" class="caja2" id="distrito" required>
+                        <option value="Select">Seleccione...</option>
+                        <option value="">Cercado</option>
+                        <option value="">Comas</option>
+                        <option value="">Independencia</option>
+                        <option value="">Los Olivos</option>
+                    </select>
+                    <br>
+                    <label for="coment" class="dato2">Comentarios</label>
+                    <textarea class="caja3" name="" id="coment" cols="52" rows="2" placeholder="Escribe un breve comentario"></textarea>
+                    <br>
+                    <div class="boton">
+                    <input type="submit" value="Enviar Datos">
+                    </div>
+                </form>
+                </div>
+            </aside>
+            <section class="content-flex">
+                <figure>
+                    <img src="./img/foto1.jpg">
+                    <figcaption><strong>Tabla</strong></figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/foto2.jpg">
+                    <figcaption><strong>Escalada</strong></figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/foto3.jpg">
+                    <figcaption><strong>Ciclismo</strong></figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/foto4.jpg">
+                    <figcaption><strong>Vela</strong></figcaption>
+                </figure>
+            </section>
+            <aside class="right-side">
+                <div class="side-externo1">
+                <iframe src="https://www.youtube.com/embed/CZtZUqxmyrY" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="side-externo2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1951.3841873104648!2d-77.08407094016738!3d-11.990522838745978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1598661014093!5m2!1ses-419!2spe"
+                     frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </aside>
+        </main>
+        <footer class="footer-principal">
+            <div class="left-footer">
+                <p>Deportes de Aventura</p>
+                <p>Lima-Perú</p>
+                <span>©2021 - created by Juanjo Huiza</span>
+            </div>
+            <figure><img src="./img/facebook.jpg"></figure>
+            <figure><img src="./img/instagram.jpg"></figure>
+        </footer>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="./js/frase.js"></script>
+</html>
